@@ -1,5 +1,7 @@
 # game.py
 
+from dotenv import load_dotenv
+
 import random
 
 print("Rock, Paper, Scissors, Shoot!")
@@ -7,12 +9,14 @@ print("Rock, Paper, Scissors, Shoot!")
 options = ['rock', 'paper', 'scissors']
 
 
-
-
-
-
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+
+load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file. see the package docs for more info
+
+USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
+
+
+print(f"Welcome {USER_NAME} to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 # asking user for input
