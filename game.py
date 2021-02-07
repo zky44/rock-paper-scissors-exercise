@@ -24,9 +24,10 @@ print("-------------------")
 
 # ask user for input and display result
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
+user_choice = user_choice.lower()
 
 print(f"You chose: {user_choice}")
-user_choice.lower()
+
 
 # validate the user selection
 # stop the program if the user choice is invalid
@@ -34,7 +35,7 @@ if user_choice in options:
     #print("GOOD")
     pass
 else:
-    print("OOPS, please choose a valid option and try again")
+    print("Oops, please choose a valid option and try again")
     exit()
 
 # simulate a computer output
@@ -50,7 +51,7 @@ print("-------------------")
 # this code was written during class but adapted from solution shared by Will P during class
 
 if user_choice == computer_choice:
-    print("It's tie!")
+    print("It's a tie!")
 elif user_choice == "paper" and computer_choice == "rock":
     print("You win! Congrats")
 elif user_choice == "paper" and computer_choice == "scissors":
