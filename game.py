@@ -1,32 +1,35 @@
 # game.py
 
+#first, import all modules and 3rd party packages
 from dotenv import load_dotenv
-
+import os
 import random
 
+#print the title of the game
 print("Rock, Paper, Scissors, Shoot!")
 
+#define the "options" variable
 options = ['rock', 'paper', 'scissors']
-
 
 print("-------------------")
 
-load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file. see the package docs for more info
+
+load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file.
 
 USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
 
-
-print(f"Welcome {USER_NAME} to my Rock-Paper-Scissors game...")
+#Welcome the user to the game using the USER_NAME in the dotenv file
+print(f"Welcome, {USER_NAME} to my Rock-Paper-Scissors game...")
 print("-------------------")
 
-# asking user for input
-
+# ask user for input and display result
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
 
 print(f"You chose: {user_choice}")
-
 user_choice.lower()
 
+# validate the user selection
+# stop the program if the user choice is invalid
 if user_choice in options:
     #print("GOOD")
     pass
@@ -34,26 +37,17 @@ else:
     print("OOPS, please choose a valid option and try again")
     exit()
 
-
-# simulating a computer output
-
+# simulate a computer output
 options = ['rock', 'paper', 'scissors']
 
 computer_choice = random.choice(options)
 
-
-# simulating a computer output
 print(f"The computer chose: {computer_choice}")
 
 print("-------------------")
 
-# validate the user selection
-
-# stop the program (not try to setermine the winner)
-# ... if the user choice is invalid
-
-
 # determining who won
+# this code was written during class but adapted from solution shared by Will P during class
 
 if user_choice == computer_choice:
     print("It's tie!")
