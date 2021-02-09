@@ -30,7 +30,7 @@ From inside the virtual environment, install package dependicies:
 pip install -r requirements/txt
 ```
 
-> NOTE: if this command throws you an error, make sure you are running it from the repository's root directory where the requirements.txt file exists. Refer back to the initial 'cd' step above
+> NOTE: if this command throws you an error, make sure you are running it from the repository's root directory where the requirements.txt file exists. Refer back to the initial `cd` step above
 
 ## Setup
 
@@ -38,6 +38,7 @@ The last step before playing the game is to setup a secret file to store your us
 
 ```sh
 USER_NAME ="Tom Brady"
+```
 
 >IMPORTANT: the ".env" file is usally the place for passing configuration options and secret credentials, so as a best practrice we don't upload this file to version control. Make sure that you follow the steps in this [.gitignore](/.gitignore) file)
 
