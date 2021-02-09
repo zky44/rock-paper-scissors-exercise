@@ -13,22 +13,22 @@ Fork this [remote repository](https://github.com/zky44/rock-paper-scissors-exerc
 
 Then navigate there from the command line (subsequent commands assume you are running them from the local repository's root directory):
 
-'''sh
+```sh
 cd rock-paper-scissors-exercise
-'''
+```
 
 Use anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
 
-'''sh
+```sh
 conda create -n my-first-env python=3.8
 conda activate my-first-env
-'''
+```
 
 From inside the virtual environment, install package dependicies:
 
-'''sh
+```sh
 pip install -r requirements/txt
-'''
+```
 
 > NOTE: if this command throws you an error, make sure you are running it from the repository's root directory where the requirements.txt file exists. Refer back to the initial 'cd' step above
 
@@ -36,7 +36,7 @@ pip install -r requirements/txt
 
 The last step before playing the game is to setup a secret file to store your username. In the root directory of your local respository, create a new file called ".env", and updare the contents of the file to specify your desired username:
 
-'''sh
+```sh
 USER_NAME ="Tom Brady"
 
 >IMPORTANT: the ".env" file is usally the place for passing configuration options and secret credentials, so as a best practrice we don't upload this file to version control. Make sure that you follow the steps in this [.gitignore](/.gitignore) file)
@@ -51,7 +51,7 @@ python game.py
 
 
 
-
+# Extra stuff below
 
 Before running the file, open the requirements.txt file to install the necesarry packages before running the program. 
 
