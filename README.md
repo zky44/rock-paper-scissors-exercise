@@ -34,31 +34,17 @@ pip install -r requirements/txt
 
 ## Setup
 
-The last step before playing the game is to setup a secret file to store your username. In the root directory of your local respository, create a new file called ".env", and updare the contents of the file to specify your desired username:
+The last step before playing the game is to setup a secret file to store your username. In the root directory of your local respository, create a new file called ".env", and update the contents of the file to specify your desired username:
 
 ```sh
 USER_NAME ="Tom Brady"
 ```
 
->IMPORTANT: the ".env" file is usally the place for passing configuration options and secret credentials, so as a best practrice we don't upload this file to version control. Make sure that you follow the steps in this [.gitignore](/.gitignore) file)
+>IMPORTANT: the ".env" file is usally the place for passing configuration options and secret credentials, so as a best practrice we don't upload this file to version control. Make sure that you add the code in this [.gitignore](/.gitignore) file, most importantly line 2, to your ".gitignore" file
 
 ## Play
 
 To play, run the game script!:
 
-'''py
+```py
 python game.py
-
-
-
-
-# Extra stuff below
-
-Before running the file, open the requirements.txt file to install the necesarry packages before running the program. 
-
-+ Create a repo for the exercise. I called it "rock-paper-scissors-exercise
-+ Create a file in that repo called "game.py" and add the following code inside
-    # print("Rock, Paper, Scissors, Shoot!")
-+ Create a new project-specific Anaconda virtual environment called "my-game-env". If you already did this, ignore that step
-+ Activate the my-game-env
-+ Use "python game.py" to run the code
