@@ -16,10 +16,10 @@ print("-------------------")
 
 load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file.
 
-USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
 
-#Welcome the user to the game using the USER_NAME in the dotenv file
-print(f"Welcome, {USER_NAME} to my Rock-Paper-Scissors game...")
+#Welcome the user to the game using the PLAYER_NAME in the dotenv file
+print(f"Welcome, {PLAYER_NAME} to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 # ask user for input and display result
